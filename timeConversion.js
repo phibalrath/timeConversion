@@ -19,7 +19,8 @@ if (PM && hr == 12) {
          hr = 12 + parseInt(time[0], 10)
          sec = time[2].replace('PM', '')
     } else if (AM && hr == 12) {
-         hr = 12 - parseInt(time[0], 10) + '0'
+         hr = '12 - parseInt(time[0], 10) + '0''
+         //OR manually reset hr = '00'
         sec = time [2].replace('AM', '')
      }//if its 12AM
       else {
